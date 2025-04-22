@@ -1,0 +1,235 @@
+/* Custom styles for Nethum's Portfolio */
+
+/* Base Styles */
+:root {
+  --primary-color: #6C63FF;
+  --secondary-color: #FF6584;
+  --dark-color: #0F172A;
+  --light-color: #F8FAFC;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation */
+.nav-link {
+  @apply text-gray-300 hover:text-primary transition-colors duration-300 relative font-medium;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  @apply text-primary;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply inline-flex items-center px-6 py-3 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 transform hover:-translate-y-1 transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center px-6 py-3 border border-white text-white rounded-full font-semibold hover:bg-white hover:text-dark transform hover:-translate-y-1 transition-all duration-300;
+}
+
+/* Section Styles */
+.section-header {
+  @apply text-center mb-12;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold inline-block;
+  position: relative;
+}
+
+.section-line {
+  @apply h-1 w-20 bg-primary mx-auto mt-4 rounded-full;
+}
+
+.section-subtitle {
+  @apply text-gray-300 max-w-2xl mx-auto;
+}
+
+/* Social Icons */
+.social-icon-link {
+  @apply w-10 h-10 bg-white/10 text-white hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300;
+}
+
+.social-icon-link-alt {
+  @apply w-10 h-10 bg-white/5 text-gray-300 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300;
+}
+
+/* Skill Card */
+.skill-card {
+  @apply bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-all duration-300;
+}
+
+.skill-icon {
+  @apply w-14 h-14 rounded-full flex items-center justify-center text-xl;
+}
+
+/* Service Card */
+.service-card {
+  @apply bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2;
+}
+
+.service-icon {
+  @apply w-16 h-16 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center text-2xl text-primary;
+}
+
+/* Portfolio Styles */
+.portfolio-filter-btn {
+  @apply px-4 py-2 text-gray-300 rounded-full hover:text-white transition-colors duration-300;
+}
+
+.portfolio-filter-btn.active {
+  @apply bg-primary text-white;
+}
+
+.portfolio-item {
+  @apply transition-all duration-500 opacity-100;
+}
+
+.portfolio-item.hidden {
+  @apply opacity-0 absolute pointer-events-none;
+}
+
+.portfolio-content {
+  @apply overflow-hidden rounded-xl bg-white/5 cursor-pointer transition-all duration-300 hover:-translate-y-2;
+}
+
+.portfolio-image-container {
+  @apply aspect-square relative overflow-hidden;
+}
+
+.portfolio-overlay {
+  @apply absolute inset-0 bg-dark/80 opacity-0 flex items-center justify-center transition-opacity duration-300;
+}
+
+.portfolio-content:hover .portfolio-overlay {
+  @apply opacity-100;
+}
+
+.portfolio-info {
+  @apply text-center px-6 transform translate-y-4 transition-transform duration-300;
+}
+
+.portfolio-content:hover .portfolio-info {
+  @apply translate-y-0;
+}
+
+.portfolio-info h3 {
+  @apply text-lg font-semibold mb-1;
+}
+
+.portfolio-info p {
+  @apply text-sm text-gray-300 mb-4;
+}
+
+.portfolio-view-btn {
+  @apply w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300;
+}
+
+/* Testimonial Styles */
+.testimonial-slider {
+  @apply flex overflow-hidden;
+}
+
+.testimonial-slide {
+  @apply min-w-full transition-transform duration-500 ease-out;
+}
+
+.testimonial-content {
+  @apply bg-white/5 rounded-xl p-6 md:p-8;
+}
+
+.testimonial-nav-btn {
+  @apply w-10 h-10 bg-white/10 text-white hover:bg-primary rounded-full flex items-center justify-center transition-colors duration-300;
+}
+
+/* Contact Form */
+.form-group {
+  @apply relative;
+}
+
+.form-label {
+  @apply block text-gray-300 mb-2;
+}
+
+.form-input {
+  @apply w-full p-3 bg-white/5 border border-white/10 rounded-lg text-white outline-none focus:border-primary transition-colors duration-300;
+}
+
+.error-message {
+  @apply text-red-500 text-sm mt-1 h-5;
+}
+
+.contact-info-item {
+  @apply flex items-start;
+}
+
+.contact-info-icon {
+  @apply w-12 h-12 bg-white/5 rounded-full flex items-center justify-center text-primary mr-4;
+}
+
+/* Animation Classes */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .service-card {
+    @apply p-5;
+  }
+  
+  .portfolio-filter-btn {
+    @apply mb-2;
+  }
+}

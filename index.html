@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nethum Matheesha | Creative Graphic Designer</title>
+  <meta name="description" content="Professional portfolio of Nethum Matheesha, a creative graphic designer with 2+ years of experience in branding, logo design, and visual storytelling.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#EB2F64',
+            secondary: '#f5cdd7',
+            accent: '#f8d7e0',
+            dark: '#1A1A1A',
+            light: '#FFFFFF',
+            background: '#FEF2F6'
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="luxe-style.css">
+</head>
+<body>
+  <!-- 3D Background Canvas -->
+  <div id="three-background" class="fixed top-0 left-0 w-full h-full -z-10"></div>
+  
+  <!-- Navbar -->
+  <nav class="luxe-navbar fixed w-full z-50" id="main-nav">
+    <div class="luxe-container flex items-center justify-between py-4">
+      <a href="#" class="text-2xl font-bold">
+        <span class="text-primary">N</span>ethum<span class="text-primary">.</span>
+      </a>
+      
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="luxe-nav-link active">Home</a>
+        <a href="#about" class="luxe-nav-link">About</a>
+        <a href="#services" class="luxe-nav-link">Services</a>
+        <a href="#portfolio" class="luxe-nav-link">Portfolio</a>
+        <a href="#contact" class="luxe-nav-link">Contact</a>
+      </div>
+      
+      <button class="md:hidden text-2xl" id="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <div class="md:hidden h-0 overflow-hidden transition-all duration-300 bg-white" id="mobile-menu">
+      <div class="luxe-container py-4 space-y-4">
+        <a href="#home" class="luxe-nav-link block">Home</a>
+        <a href="#about" class="luxe-nav-link block">About</a>
+        <a href="#services" class="luxe-nav-link block">Services</a>
+        <a href="#portfolio" class="luxe-nav-link block">Portfolio</a>
+        <a href="#contact" class="luxe-nav-link block">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="pattern-dots top-right"></div>
+    <div class="pattern-dots bottom-left"></div>
+    <div class="circle-bg large"></div>
+    
+    <div class="luxe-container">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="hero-content">
+          <h4 class="text-lg text-gray-600 mb-2 animate-fadeInUp" style="animation-delay: 0.1s;">Hi there!</h4>
+          <h1 class="hero-title text-dark animate-fadeInUp" style="animation-delay: 0.2s;">
+            <span class="text-primary font-extrabold">NETHUM</span> IS HERE TO BE YOUR ASSISTANCE
+          </h1>
+          <p class="hero-text text-gray-600 animate-fadeInUp" style="animation-delay: 0.3s;">
+            I am here ready to help you in making creative digital products with my 2+ years of experience in graphic design and visual storytelling.
+          </p>
+          <div class="flex flex-wrap gap-4 animate-fadeInUp" style="animation-delay: 0.4s;">
+            <a href="#portfolio" class="luxe-btn luxe-btn-primary">
+              View My Work <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <a href="#contact" class="luxe-btn luxe-btn-outline">
+              Get In Touch <i class="fas fa-paper-plane ml-2"></i>
+            </a>
+          </div>
+          
+          <div class="mt-10 flex space-x-4 animate-fadeInUp" style="animation-delay: 0.5s;">
+            <a href="#" class="social-icon bg-white/20 w-10 h-10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon bg-white/20 w-10 h-10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+              <i class="fab fa-behance"></i>
+            </a>
+            <a href="#" class="social-icon bg-white/20 w-10 h-10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+              <i class="fab fa-dribbble"></i>
+            </a>
+            <a href="#" class="social-icon bg-white/20 w-10 h-10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-image-container">
+          <div class="relative w-full aspect-square bg-primary rounded-full overflow-hidden flex items-center justify-center">
+            <div class="absolute top-3 left-3 bg-white rounded-lg p-3 shadow-lg animate-pulse">
+              <div class="flex items-center">
+                <span class="text-primary font-bold text-lg">24+</span>
+                <span class="ml-2 text-sm text-gray-600">Projects</span>
+              </div>
+            </div>
+            <div class="absolute top-1/4 right-3 bg-white rounded-lg p-3 shadow-lg animate-pulse" style="animation-delay: 0.3s;">
+              <div class="flex items-center">
+                <span class="text-primary font-bold text-lg">4.8</span>
+                <span class="ml-2 text-sm text-gray-600">Client Satisfaction</span>
+              </div>
+            </div>
+            <div class="absolute bottom-10 right-10 bg-white rounded-lg p-3 shadow-lg animate-pulse" style="animation-delay: 0.6s;">
+              <div class="flex items-center">
+                <span class="text-primary font-bold text-lg">Product Designer</span>
+                <span class="ml-2 text-sm text-gray-600">2+ years</span>
+              </div>
+            </div>
+            <div class="text-white text-6xl">
+              <i class="fas fa-user-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="luxe-section bg-white">
+    <div class="luxe-container">
+      <div class="text-center mb-16">
+        <h2 class="section-title centered">Our Services</h2>
+        <p class="text-gray-500 mt-8 max-w-2xl mx-auto">
+          Providing creative design solutions to help your brand stand out in the digital landscape
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-pen-nib"></i>
+          </div>
+          <h3 class="service-title">Branding</h3>
+          <p class="text-gray-500">
+            Complete brand identity packages with logo design, color palette selection, typography, and brand guidelines.
+          </p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3 class="service-title">UI/UX Design</h3>
+          <p class="text-gray-500">
+            User-centered interface designs that enhance user experience and guide visitors through digital platforms.
+          </p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <h3 class="service-title">Product Design</h3>
+          <p class="text-gray-500">
+            Eye-catching product designs and packaging solutions that capture attention and drive consumer engagement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="luxe-section">
+    <div class="luxe-container">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="relative">
+            <div class="w-full aspect-[4/5] bg-secondary rounded-2xl overflow-hidden flex items-center justify-center text-6xl">
+              <i class="fas fa-user-circle text-primary"></i>
+            </div>
+            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-2xl"></div>
+            <div class="absolute -top-6 -left-6 w-20 h-20 bg-accent rounded-lg"></div>
+          </div>
+        </div>
+        
+        <div>
+          <h2 class="section-title">About Me</h2>
+          <h3 class="text-2xl font-semibold mt-8 text-primary">Creative Graphic Designer & Visual Storyteller</h3>
+          <p class="mt-4 text-gray-600">
+            I'm Nethum Matheesha, a 17-year-old creative graphic designer with over 2 years of hands-on experience. My design journey started when I was 15, fueled by a passion for visual communication and digital art.
+          </p>
+          <p class="mt-4 text-gray-600">
+            I specialize in creating memorable brand identities through thoughtful logo design, cohesive branding systems, and engaging social media graphics. My approach combines artistic sensitivity with strategic thinking to deliver designs that not only look exceptional but also effectively communicate your brand's unique story.
+          </p>
+          
+          <div class="grid grid-cols-2 gap-6 mt-8">
+            <div class="bg-white p-4 rounded-xl shadow-sm">
+              <div class="text-3xl font-bold text-primary">2+</div>
+              <div class="text-gray-500">Years Experience</div>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm">
+              <div class="text-3xl font-bold text-primary">50+</div>
+              <div class="text-gray-500">Projects Completed</div>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm">
+              <div class="text-3xl font-bold text-primary">30+</div>
+              <div class="text-gray-500">Happy Clients</div>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm">
+              <div class="text-3xl font-bold text-primary">3</div>
+              <div class="text-gray-500">Design Awards</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="luxe-section bg-white">
+    <div class="luxe-container">
+      <div class="text-center mb-16">
+        <h2 class="section-title centered">My Skills</h2>
+        <p class="text-gray-500 mt-8 max-w-2xl mx-auto">
+          Professional skills that I've acquired over the years
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-gray-50 p-6 rounded-2xl">
+          <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center text-2xl text-primary mb-4">
+            <i class="fas fa-pencil-ruler"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Graphic Design</h3>
+          <p class="text-gray-500 mb-4">Adobe Photoshop, Illustrator, InDesign</p>
+          <div class="w-full h-2 bg-gray-200 rounded-full">
+            <div class="h-full bg-primary rounded-full" style="width: 95%"></div>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-2xl">
+          <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center text-2xl text-primary mb-4">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Brand Identity</h3>
+          <p class="text-gray-500 mb-4">Logo Design, Brand Guidelines, Visual Identity</p>
+          <div class="w-full h-2 bg-gray-200 rounded-full">
+            <div class="h-full bg-primary rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-2xl">
+          <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center text-2xl text-primary mb-4">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">UI/UX Design</h3>
+          <p class="text-gray-500 mb-4">Figma, Adobe XD, Sketch</p>
+          <div class="w-full h-2 bg-gray-200 rounded-full">
+            <div class="h-full bg-primary rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-2xl">
+          <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center text-2xl text-primary mb-4">
+            <i class="fas fa-photo-video"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Motion Graphics</h3>
+          <p class="text-gray-500 mb-4">After Effects, Premiere Pro, Animation</p>
+          <div class="w-full h-2 bg-gray-200 rounded-full">
+            <div class="h-full bg-primary rounded-full" style="width: 80%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="luxe-section">
+    <div class="luxe-container">
+      <div class="text-center mb-16">
+        <h2 class="section-title centered">My Portfolio</h2>
+        <p class="text-gray-500 mt-8 max-w-2xl mx-auto">
+          Check out some of my recent projects and creative work
+        </p>
+      </div>
+      
+      <div class="portfolio-filter">
+        <button class="portfolio-filter-btn active" data-filter="all">All</button>
+        <button class="portfolio-filter-btn" data-filter="branding">Branding</button>
+        <button class="portfolio-filter-btn" data-filter="logo">Logo Design</button>
+        <button class="portfolio-filter-btn" data-filter="ui">UI/UX Design</button>
+        <button class="portfolio-filter-btn" data-filter="social">Social Media</button>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-primary/20 to-primary/40">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Modern Brand Identity</h3>
+              <p class="text-gray-500">Branding, Visual Identity</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Modern Brand Identity</h3>
+                <p class="portfolio-category">Branding, Visual Identity</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="1">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="logo">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-accent to-secondary">
+              <i class="fas fa-pen-nib"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Minimalist Logo Design</h3>
+              <p class="text-gray-500">Logo, Brand Mark</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Minimalist Logo Design</h3>
+                <p class="portfolio-category">Logo, Brand Mark</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="2">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="ui">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-primary/30 to-secondary/30">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">E-Commerce Website Design</h3>
+              <p class="text-gray-500">UI/UX, Web Design</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">E-Commerce Website Design</h3>
+                <p class="portfolio-category">UI/UX, Web Design</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="3">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="social">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-secondary/40 to-primary/40">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Social Media Campaign</h3>
+              <p class="text-gray-500">Social Media, Graphics</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Social Media Campaign</h3>
+                <p class="portfolio-category">Social Media, Graphics</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="4">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-accent to-primary/30">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Restaurant Branding</h3>
+              <p class="text-gray-500">Branding, Packaging</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Restaurant Branding</h3>
+                <p class="portfolio-category">Branding, Packaging</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="5">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="logo">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-primary/20 to-accent">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Technology Logo Suite</h3>
+              <p class="text-gray-500">Logo Design, Branding</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Technology Logo Suite</h3>
+                <p class="portfolio-category">Logo Design, Branding</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="6">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Additional Portfolio Items -->
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-primary/20 to-secondary/30">
+              <i class="fas fa-tshirt"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Fashion Lookbook Design</h3>
+              <p class="text-gray-500">Print Design, Fashion</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Fashion Lookbook Design</h3>
+                <p class="portfolio-category">Print Design, Fashion</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="7">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="ui">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-accent to-primary/20">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Mobile App UI Design</h3>
+              <p class="text-gray-500">UI/UX, Mobile App</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Mobile App UI Design</h3>
+                <p class="portfolio-category">UI/UX, Mobile App</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="8">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-primary/30 to-accent">
+              <i class="fas fa-chart-pie"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Annual Report Design</h3>
+              <p class="text-gray-500">Print Design, Corporate</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Annual Report Design</h3>
+                <p class="portfolio-category">Print Design, Corporate</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="9">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-secondary to-primary/20">
+              <i class="fas fa-box-open"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Product Packaging Design</h3>
+              <p class="text-gray-500">Packaging, Branding</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Product Packaging Design</h3>
+                <p class="portfolio-category">Packaging, Branding</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="10">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-accent/70 to-primary/30">
+              <i class="fas fa-music"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Event Branding & Promotion</h3>
+              <p class="text-gray-500">Branding, Event Design</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Event Branding & Promotion</h3>
+                <p class="portfolio-category">Branding, Event Design</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="11">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-primary/40 to-accent/70">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Book Cover Design Series</h3>
+              <p class="text-gray-500">Book Design, Illustration</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Book Cover Design Series</h3>
+                <p class="portfolio-category">Book Design, Illustration</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="12">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-secondary/50 to-primary/50">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Corporate Identity System</h3>
+              <p class="text-gray-500">Branding, Corporate Design</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Corporate Identity System</h3>
+                <p class="portfolio-category">Branding, Corporate Design</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="13">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-primary/30 to-secondary/60">
+              <i class="fas fa-newspaper"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Magazine Layout Design</h3>
+              <p class="text-gray-500">Editorial Design, Print</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Magazine Layout Design</h3>
+                <p class="portfolio-category">Editorial Design, Print</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="14">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="ui">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-accent/60 to-primary/40">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Educational App Design</h3>
+              <p class="text-gray-500">UI/UX, Educational</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Educational App Design</h3>
+                <p class="portfolio-category">UI/UX, Educational</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="15">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-content">
+            <div class="portfolio-image bg-gradient-to-br from-primary/50 to-secondary/40">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="p-4 bg-white">
+              <h3 class="text-xl font-semibold">Infographic Design Series</h3>
+              <p class="text-gray-500">Information Design, Data Visualization</p>
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Infographic Design Series</h3>
+                <p class="portfolio-category">Information Design, Data Visualization</p>
+                <button class="luxe-btn bg-white text-primary portfolio-view-btn" data-portfolio-id="16">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Modal -->
+  <div id="portfolio-modal" class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="relative w-full max-w-4xl p-6 mx-4 bg-white rounded-2xl max-h-[90vh] overflow-y-auto">
+      <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-primary text-xl">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="portfolio-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="luxe-section bg-white">
+    <div class="luxe-container">
+      <div class="text-center mb-16">
+        <h2 class="section-title centered">Client Testimonials</h2>
+        <p class="text-gray-500 mt-8 max-w-2xl mx-auto">
+          What my clients say about working with me
+        </p>
+      </div>
+      
+      <div class="relative">
+        <div id="testimonial-slider" class="flex transition-transform duration-500">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-slide min-w-full">
+            <div class="max-w-2xl mx-auto">
+              <div class="testimonial-content">
+                <div class="flex justify-center mb-6">
+                  <div class="text-primary text-2xl">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="text-center text-gray-600 text-lg mb-6">
+                  "Working with Nethum was an absolute pleasure. His creative vision and attention to detail brought our brand to life in ways we couldn't have imagined. The logo design perfectly captures our company's essence, and the overall branding package is cohesive and professional. Highly recommended!"
+                </p>
+                <div class="flex flex-col items-center">
+                  <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-xl mb-3">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <h4 class="text-lg font-semibold">Sarah Johnson</h4>
+                  <p class="text-gray-500">CEO, TechStart Inc.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="testimonial-slide min-w-full">
+            <div class="max-w-2xl mx-auto">
+              <div class="testimonial-content">
+                <div class="flex justify-center mb-6">
+                  <div class="text-primary text-2xl">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="text-center text-gray-600 text-lg mb-6">
+                  "Nethum's social media designs have transformed our online presence. Our engagement has increased by 40% since implementing his creative concepts. He's responsive, professional, and has a true talent for capturing the essence of a brand. We're looking forward to working with him on future projects!"
+                </p>
+                <div class="flex flex-col items-center">
+                  <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-xl mb-3">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <h4 class="text-lg font-semibold">Michael Chen</h4>
+                  <p class="text-gray-500">Marketing Director, GlowUp Cosmetics</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 3 -->
+          <div class="testimonial-slide min-w-full">
+            <div class="max-w-2xl mx-auto">
+              <div class="testimonial-content">
+                <div class="flex justify-center mb-6">
+                  <div class="text-primary text-2xl">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+                <p class="text-center text-gray-600 text-lg mb-6">
+                  "We needed a complete rebrand for our restaurant, and Nethum delivered beyond our expectations. From the logo to the menu design and packaging, everything works together beautifully. Our customers constantly compliment our new look, and it's all thanks to Nethum's creative expertise."
+                </p>
+                <div class="flex flex-col items-center">
+                  <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-xl mb-3">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <h4 class="text-lg font-semibold">Elena Rodriguez</h4>
+                  <p class="text-gray-500">Owner, Fusion Kitchen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex justify-center mt-8 space-x-4">
+          <button id="testimonial-prev" class="testimonial-nav-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button id="testimonial-next" class="testimonial-nav-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="luxe-section">
+    <div class="luxe-container">
+      <div class="text-center mb-16">
+        <h2 class="section-title centered">Get In Touch</h2>
+        <p class="text-gray-500 mt-8 max-w-2xl mx-auto">
+          Have a project in mind? Let's work together to create something amazing
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold mb-2">Location</h4>
+              <p class="text-gray-600">Colombo, Sri Lanka</p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold mb-2">Email</h4>
+              <p class="text-gray-600">contact@nethum.design</p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold mb-2">Phone</h4>
+              <p class="text-gray-600">+94 71 234 5678</p>
+            </div>
+          </div>
+          
+          <div class="mt-10">
+            <h4 class="text-xl font-semibold mb-4">Follow Me</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-behance"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-dribbble"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-control" required>
+              <div id="name-error" class="error-message"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" class="form-control" required>
+              <div id="email-error" class="error-message"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-control" required>
+              <div id="subject-error" class="error-message"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea id="message" rows="5" class="form-control" required></textarea>
+              <div id="message-error" class="error-message"></div>
+            </div>
+            
+            <button type="submit" class="luxe-btn luxe-btn-primary w-full">
+              Send Message <i class="fas fa-paper-plane ml-2"></i>
+            </button>
+          </form>
+          
+          <div id="form-success" class="hidden text-center py-12">
+            <div class="text-5xl text-primary mb-4">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2">Message Sent!</h3>
+            <p class="text-gray-600">Thank you for reaching out. I'll get back to you as soon as possible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-lg opacity-0 invisible transition-all duration-300">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="luxe-container">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <a href="#" class="text-3xl font-bold text-white block mb-4">
+            <span class="text-primary">N</span>ethum<span class="text-primary">.</span>
+          </a>
+          <p class="text-gray-400 max-w-md">
+            Creative graphic designer specializing in branding, logo design, and visual storytelling. Let's create something amazing together.
+          </p>
+          
+          <div class="social-icons mt-6">
+            <a href="#" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-behance"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-dribbble"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+            <h4 class="text-xl font-semibold text-white mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+              <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors">About</a></li>
+              <li><a href="#services" class="text-gray-400 hover:text-primary transition-colors">Services</a></li>
+              <li><a href="#portfolio" class="text-gray-400 hover:text-primary transition-colors">Portfolio</a></li>
+              <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-xl font-semibold text-white mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Logo Design</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Brand Identity</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">UI/UX Design</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Social Media Design</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Motion Graphics</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-copyright mt-12">
+        &copy; 2025 Nethum Matheesha. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="luxe-three-background.js"></script>
+  <script src="luxe-main.js"></script>
+  <script src="portfolio.js"></script>
+  <script src="form-validation.js"></script>
+</body>
+</html>
